@@ -1,0 +1,30 @@
+/*!
+ * Start Bootstrap - Creative v3.3.7+1 (http://startbootstrap.com/template-overviews/creative)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+a{
+    color:#80197E;
+}
+
+.bg-primary{
+    background-color: #3c9f3e;
+}
+
+.partners img {
+    background: white;
+    margin: 5px;
+}
+
+.text-gauche {
+	text-align: left;
+}
+
+.header-protocoles{
+	background-image: url(../img/header-protocoles.jpg)
+}
+
+.header-actus{
+	background-image: url(../img/header-actus.jpg)
+}
