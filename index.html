@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GeoNature</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script>
+				function mail ( usr , dom )
+				{
+					self.document.location = 'mailto:' + usr + String.fromCharCode(64) + dom ;
+				}
+	</script>
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">GeoNature</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">A propos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Télécharger</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Démo</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+					<li>
+                        <a href="protocoles.html">Protocoles</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">GeoNature, un outil open source développé par les parcs nationaux français</h1>
+                <hr>
+                <p>Une application WEB et mobile pour saisir, gérer et diffuser des données faune et flore</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">En savoir plus</a>
+            </div>
+        </div>
+    </header>
+
+    
+	<section id="ressources">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Ressources externes</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-desktop text-primary sr-icons"></i>
+                        <h3>Démonstration</h3>
+						<a href="https://demo.geonature.fr" target="_blank" class="btn btn-primary">Tester GeoNature</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-file-text text-primary sr-icons"></i>
+                        <h3>Documentation</h3>
+						<a href="https://docs.geonature.fr" target="_blank" class="btn btn-primary">Connaitre GeoNature</a>
+                    </div>
+                </div>
+				<div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-archive text-primary sr-icons"></i>
+                        <h3>Présentation</h3>
+						<a href="https://geonature.fr/documents/2018-01-GeoNature.pdf" target="_blank" class="btn btn-primary">Découvrir GeoNature</a>
+                    </div>
+                </div>
+				<div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-github text-primary sr-icons"></i>
+                        <h3>Code source</h3>
+						<a href="https://github.com/PnX-SI/GeoNature" target="_blank" class="btn btn-primary">Télécharger GeoNature</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+				<div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">A propos</h2>
+                    <hr class="light">
+					<p>
+						<img src="img/geonature-logo.jpg" style="max-width:100%;">
+					</p>
+                    <p class="text-faded">GeoNature comprend un ensemble d'outils développés par les parcs nationaux de France et disponibles sous licence libre.</p>
+                    <p class="text-faded">Chaque outil peut être téléchargé et installé indépendamment : 
+						<a href="https://github.com/PnX-SI/GeoNature" target="_blank">GeoNature</a> (pour la saisie web, la consultation et l'export des données), 
+						<a href="https://github.com/PnX-SI/gn_mobile_occtax" target="_blank">Occtax-mobile</a> (pour la saisie mobile dans Occtax), 
+						<a href="https://github.com/PnX-SI/GeoNature-atlas/" target="_blank">GeoNature-atlas</a> (pour la diffusion des données), 
+						<a href="https://github.com/PnX-SI/GeoNature-citizen/" target="_blank">GeoNature-citizen</a> (pour la collecte citoyenne ouverte de données), 
+						<a href="https://github.com/PnX-SI/TaxHub/" target="_blank">TaxHub</a> (pour la gestion de la taxonomie à partir de Taxref), 
+						<a href="https://github.com/PnX-SI/UsersHub" target="_blank">UsersHub</a> (pour la gestion des utilisateurs et de leurs droits).
+					</p>
+                    <p class="text-faded"><img src="img/schema-geonature-01.png" width="100%"></p>
+                    <p class="text-faded">Il est aussi possible de déployer l'ensemble des outils à l'aide d'un <a href="https://geonature.readthedocs.io/fr/latest/installation-all.html" target="_blank">script global et automatisé</a>.</p>
+                    <p class="text-faded">
+						Pour en savoir plus, téléchargez la <a href="https://geonature.fr/documents/2018-01-GeoNature.pdf" target="_blank">présentation simplifiée</a>
+						<br/>ou la <a href="https://geonature.fr/documents/2018-05-GeoNature-Presentation.pdf" target="_blank">présentation détaillée et <a href="https://geonature.fr/documents/2018-05-GeoNature-Presentation-commentaires.pdf" target="_blank">ses commentaires</a>.
+					</p>
+					<p class="text-faded">Vous pouvez aussi consulter toutes les présentations sur l'<a href="https://geonature.fr/documents/" target="_blank">espace de ressources</a>.</p>
+                    <p class="text-faded"><img src="https://github.com/PnX-SI/GeoNature/raw/v1/docs/images/schema-geonature-environnement.jpg" width="100%"></p>
+					<p>
+						GeoNature permet de déployer un système d'informations complet pour la gestion des données Faune/Flore d'une structure, allant de :
+						<ul class="text-gauche">
+							<li>la gestion des référentiels (taxonomiques et utilisateurs),</li>
+							<li>à la saisie web et mobile dans différents protocoles,</li>
+							<li>à la gestion de leurs métadonnées,</li>
+							<li>à l'intégration de données de partenaires,</li>
+							<li>à l'export des données selon les formats attendus par chaque partenaires,</li>
+							<li>à la synthétisation des données des différents protocoles sous forme de DEE,</li>
+							<li>à la diffusion des données sur un portail web grand public.</li>
+						</ul>
+					</p>
+					<p><img src="img/icon-new.png" width="40px" valign="middle"> GeoNature 2.0.0 est sorti! 
+					<a href="https://github.com/PnX-SI/GeoNature/" target="_blank">Pour en savoir plus</a>. 
+					</p>
+                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">C'est parti!</a>
+				</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">En bref</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-link text-primary sr-icons"></i>
+                        <h3>Chaine de travail</h3>
+                        <p class="text-muted">De la gestion de référentiels en passant par les bases de données scientifiques jusqu'à la synthèse et la diffusion des données.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-mobile text-primary sr-icons"></i>
+                        <h3>Mobile</h3>
+                        <p class="text-muted">GeoNature-mobile et Occtax-mobile permettent de saisir les données faune et flore directement sur le terrain.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-github text-primary sr-icons"></i>
+                        <h3>Open Source</h3>
+                        <p class="text-muted">GeoNature, UsersHub, TaxHub, GeoNature-atlas et GeoNature-citizen sont disponibles sous licence libre sur Github.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-users text-primary sr-icons"></i>
+                        <h3>Collaboratif</h3>
+                        <p class="text-muted">GeoNature est développé par plusieurs parcs nationaux et la communauté des utilisateurs et développeurs continue de s'étendre.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/01-gn2-synthese.jpg" class="portfolio-box">
+                        <img src="img/portfolio/fullsize/01-gn2-synthese.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    GeoNature synthèse
+                                </div>
+                                <div class="project-name">
+                                    Pour rechercher et consulter l'ensemble de vos données faune et flore
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/02-gn2-synthese-detail.jpg" class="portfolio-box">
+                        <img src="img/portfolio/fullsize/02-gn2-synthese-detail.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Détail de chaque observation
+                                </div>
+                                <div class="project-name">
+                                    Les informations détaillées de chaque occurrence de taxon
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/03-gn2-occtax.jpg" class="portfolio-box">
+                        <img src="img/portfolio/fullsize/03-gn2-occtax.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Occtax
+                                </div>
+                                <div class="project-name">
+                                    Un outil de saisie d'occurrences de taxon basé sur le standard SINP
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/04-gn2-sft.jpg" class="portfolio-box">
+                        <img src="img/portfolio/fullsize/04-gn2-sft.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Suivi Flore Territoire
+                                </div>
+                                <div class="project-name">
+                                    Un exemple de protocole de suivi de la flore par maille
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/07-mobile.jpg" class="portfolio-box">
+                        <img src="img/portfolio/fullsize/07-mobile.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    GeoNature-mobile
+                                </div>
+                                <div class="project-name">
+                                    Des applications mobiles Android pour saisir les données directement sur le terrain
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/04-utilisateurs.jpg" class="portfolio-box">
+                        <img src="img/portfolio/fullsize/04-utilisateurs.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    UsersHub
+                                </div>
+                                <div class="project-name">
+                                    Un outil pour gérer les utilisateurs, les observateurs, les groupes et leurs droits
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/05-taxhub.jpg" class="portfolio-box">
+                        <img src="img/portfolio/fullsize/05-taxhub.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    TaxHub
+                                </div>
+                                <div class="project-name">
+                                    Un outil pour gérer les taxons à partir de Taxref et y ajouter des informations spécifiques
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/06-atlas.jpg" class="portfolio-box">
+                        <img src="img/portfolio/fullsize/06-atlas.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Atlas de la biodiversité
+                                </div>
+                                <div class="project-name">
+                                    Un atlas pour diffuser l'ensemble de vos observations
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/08-atlas-fiche.jpg" class="portfolio-box">
+                        <img src="img/portfolio/fullsize/08-atlas-fiche.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Fiches espèces
+                                </div>
+                                <div class="project-name">
+                                    Des fiches espèces dynamiques, détaillées et illustrées
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Démonstrations</h2>
+                <p>
+					<a href="https://demo.geonature.fr/geonature" target="_blank">Tester GeoNature V2</a> (admin / admin)<br/>
+                    <a href="https://demo.geonature.fr/taxhub/" target="_blank">Tester TaxHub</a> (admin / admin)<br/>
+                    <a href="https://demo.geonature.fr/usershub" target="_blank">Tester UsersHub</a> (admin / admin)<br/>
+                    <a href="https://biodiversite.ecrins-parcnational.fr" target="_blank">Tester GeoNature-atlas</a><br/>
+					<a href="https://github.com/PnX-SI/gn_mobile_occtax" target="_blank">Tester Occtax-mobile</a><br/>
+					<a href="https://democitizen.geonature.fr" target="_blank">Tester GeoNature-citizen</a>
+                </p>
+                <a href="https://github.com/PnX-SI/GeoNature" class="btn btn-default btn-xl sr-button">Télécharger GeoNature !</a>
+            </div>
+        </div>
+    </aside>
+    
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Ressources</h2>
+                    <hr class="primary">
+                    <p class="text-faded">
+                        <b><u>GEONATURE</u></b><br/><br/>
+                        <i class="fa fa-github"></i> <a href="https://github.com/PnX-SI/GeoNature" target="_blank">
+							Téléchargement, code source, présentation complète et tickets
+						</a><br/>
+                        <i class="fa fa-external-link"></i> <a href="https://demo.geonature.fr/geonature" target="_blank">
+							Démonstration</a> (admin / admin)
+						<br/>
+                        <i class="fa fa-file-text"></i> <a href="https://geonature.rtfd.org" target="_blank">
+							Documentation
+						</a><br/>
+                        <i class="fa fa-file-pdf-o"></i> <a href="https://geonature.fr/documents/2018-05-GeoNature-Presentation.pdf" target="_blank">
+							Présentation PDF de GeoNature (Mai 2018)
+						</a><br/>
+						<i class="fa fa-file-pdf-o"></i> <a href="https://geonature.fr/documents/2018-09-GeoNature-GTSSC.pdf" target="_blank">
+							Présentation PDF de GeoNature au GeoPNR (2017)
+						</a><br/>
+                        <i class="fa fa-file-pdf-o"></i> <a href="https://github.com/PnX-SI/GeoNature/raw/v1/docs/pdf/protocoles-locaux-echanges-nationaux.pdf" target="_blank">
+							Des protocoles locaux aux echanges de données nationaux
+						</a><br/>
+						<i class="fa fa-link"></i> <a href="protocoles.html">
+							Description des protocoles
+						</a>
+                    </p>
+                    <hr class="light">
+                    <p class="text-faded">
+                        <b><u>OCCTAX-MOBILE</u></b><br/><br/>
+                        <i class="fa fa-github"></i> <a href="https://github.com/PnX-SI/gn_mobile_occtax" target="_blank">Téléchargement, code source, présentation et tickets</a><br/>
+                        <i class="fa fa-file-text"></i> <a href="https://github.com/PnX-SI/gn_mobile_occtax/blob/doc-installation/docs/installation-fr.md" target="_blank">Documentation</a>
+                    </p>
+                    <hr class="light">
+                    <p class="text-faded">
+                        <b><u>GEONATURE-ATLAS</u></b><br/><br/>
+                        <i class="fa fa-github"></i> <a href="https://github.com/PnX-SI/GeoNature-atlas" target="_blank">Téléchargement, code source, présentation et tickets</a><br/>
+                        <i class="fa fa-external-link"></i> <a href="https://biodiversite.ecrins-parcnational.fr" target="_blank">Biodiv'Ecrins, démonstration de GeoNature-atlas</a><br/>
+                        <i class="fa fa-file-text"></i> <a href="https://github.com/PnX-SI/GeoNature-atlas/blob/master/docs/installation.rst" target="_blank">Documentation</a><br/>
+                        <i class="fa fa-file-pdf-o"></i> <a href="https://github.com/PnX-SI/GeoNature-atlas/blob/master/docs/2016-09-GeoNature-atlas-PRESENTATION.pdf" target="_blank">Présentation générale</a><br/>
+                        <i class="fa fa-file-pdf-o"></i> <a href="https://github.com/PnX-SI/GeoNature-atlas/blob/master/docs/2016-09-30-rapport_stage_Theo-Lechemia.pdf" target="_blank">Rapport de stage (Théo Lechemia)</a><br/>
+                        <i class="fa fa-file-pdf-o"></i> <a href="https://github.com/PnX-SI/GeoNature-atlas/blob/master/docs/2016-09-soutenance-Theo-Lechemia.pdf" target="_blank">Soutenance de stage (Théo Lechemia)</a><br/>
+                    </p>
+					<p class="text-faded">
+                        <b><u>GEONATURE-CITIZEN</u></b><br/><br/>
+                        <i class="fa fa-github"></i> <a href="https://github.com/PnX-SI/GeoNature-citizen" target="_blank">Téléchargement, code source, présentation et tickets</a><br/>
+                        <i class="fa fa-external-link"></i> <a href="https://obs.mercantour-parcnational.fr" target="_blank">Obs'Mercantour, démonstration de GeoNature-citizen</a><br/>
+                        <i class="fa fa-file-text"></i> <a href="https://geonature-citizen.readthedocs.io" target="_blank">Documentation</a><br/>
+                        <i class="fa fa-file-pdf-o"></i> <a href="https://professionnels.ofb.fr/sites/default/files/pdf/documentation/TIC2019_PNM-PNRP-GeoNature%20Citizen_2019.pdf" target="_blank">Présentation au Forum TIC 2019</a><br/>
+                    </p>
+                    <hr class="light">
+                    <p class="text-faded">
+                        <b><u>TAXHUB</u></b><br/><br/>
+                        <i class="fa fa-github"></i> <a href="https://github.com/PnX-SI/TaxHub" target="_blank">Téléchargement, code source, présentation et tickets</a><br/>
+                        <i class="fa fa-external-link"></i> <a href="https://demo.geonature.fr/taxhub" target="_blank">Démonstration</a> (admin / admin)<br/>
+                        <i class="fa fa-file-text"></i> <a href="https://taxhub.readthedocs.io/fr/latest/" target="_blank">Documentation</a><br/>
+                    </p>
+                    <hr class="light">
+                    <p class="text-faded">
+                        <b><u>USERSHUB</u></b><br/><br/>
+                        <i class="fa fa-github"></i> <a href="https://github.com/PnX-SI/UsersHub" target="_blank">Téléchargement, code source, présentation et tickets</a><br/>
+                        <i class="fa fa-external-link"></i> <a href="https://demo.geonature.fr/usershub" target="_blank">Démonstration</a> (admin / admin)<br/>
+                        <i class="fa fa-file-text"></i> <a href="https://usershub.readthedocs.io/fr/latest/" target="_blank">Documentation</a><br/>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Des questions ?</h2>
+                    <hr class="primary">
+                    <p>Contactez l'équipe du pôle Système d'Informations du Parc national des Ecrins</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>04-92-40-20-30</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+					<p>
+						<a href="javascript:mail('geonature','ecrins-parcnational.fr')" >
+						&#103;&#101;&#111;&#110;&#97;&#116;&#117;&#114;&#101;&#64;&#101;&#99;&#114;&#105;&#110;&#115;&#45;&#112;&#97;&#114;&#99;&#110;&#97;&#116;&#105;&#111;&#110;&#97;&#108;&#46;&#102;&#114;
+						</a>
+					</p>
+                </div>
+				<div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p>Si votre question concerne le Dépôt légal de Biodiversité, utilisez la documentation et le formulaire de contact sur le <a href="https://depot-legal-biodiversite.naturefrance.fr" target="_blank">site dédié</a>.</p>
+                </div>
+				<div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Discussions</h2>
+                    <hr class="primary">
+                    <p>Inscrivez-vous à la liste de discussion d'information générale du projet</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="https://framalistes.org/sympa/info/geonature-info" target="_blank">Framalistes</a></p>
+                </div>
+				<div class="col-lg-8 col-lg-offset-2 text-center">
+                    <hr class="primary">
+                    <p>Pour tout échange ou question technique, reportez-vous aux dépôts Github des différents projets</p>
+					<i class="fa fa-github fa-3x sr-contact"></i>
+                    <p><a href="https://github.com/PnX-SI/" target="_blank">Github des Parcs nationaux de France</a></p>
+					<hr class="primary">
+					<i class="fa fa-twitter fa-3x sr-contact"></i>
+                    <p><a href="https://twitter.com/geonature2" target="_blank">@GeoNature2</a></p>
+					
+					<hr class="primary">
+					<p>Consultez la <a href="https://lite.framacalc.org/9efn-geonature-users" target="_blank">liste des utilisateurs</a> de GeoNature</p>
+					
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <aside class="bg-dark">
+        <div class="text-center partners">
+            <div class="call-to-action">
+                <h2 class="section-heading">Partenaires</h2>
+                <hr class="primary">
+                <p>
+                    <img src="/img/logo-pnecrins.png" height="100px" title="Logo du Parc national des Ecrins"> 
+                    <img src="https://www.cevennes-parcnational.fr/sites/cevennes-parcnational.fr/files/logo_cev.jpg" height="100px" style="max-width:90%;" title="Logo du Parc national des Cevennes"> 
+                    <img src="https://www.vanoise-parcnational.fr/sites/vanoise-parcnational.fr/files/logo_pnv_0.jpg" height="100px" style="max-width:90%;" title="Logo du Parc national de la Vanoise"> 
+                    <img src="https://www.saintmartinvesubie.fr/images/decouvrir/parc-national-mercantour/logo_pnm_vert.png" height="100px" style="max-width:90%;" title="Logo du Parc national du Mercantour"> 
+                    <img src="https://www.parc-amazonien-guyane.fr/sites/parc-amazonien-guyane.fr/files/logo_pag_0.jpg" height="100px" style="max-width:90%;" title="Logo du Parc amazonien de Guyane"> 
+                    <img src="https://creamontblanc.org/sites/all/themes/crea_bootstrap/logo.png" height="100px" style="max-width:90%;" title="Logo du CREA Mont-Blanc"> 
+                    <img src="https://silene.eu/wp-content/uploads/2020/06/logo-silene.png" height="100px" style="max-width:90%;" title="Logo du SINP PACA - Silene"> 
+                    <img src="https://inpn.mnhn.fr/css/images_template/logo_inpn.png" height="100px" style="max-width:90%;" title="Logo de l'INPN"> 
+                    <img src="http://www.patrinat.fr/sites/patrinat/files/logo_patrinat_2020_hd_transparent_serre.png" height="100px" style="max-width:90%;" title="Logo de l'UMS Patrinat">  
+                    <img src="https://ofb.gouv.fr/sites/default/files/logo-ofb.png" height="100px" style="max-width:90%;" title="Logo de l'OFB">                   
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+</body>
+
+</html>
